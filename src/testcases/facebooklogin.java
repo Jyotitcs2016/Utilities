@@ -10,8 +10,7 @@ import assignments.baseclass.base_class;
 
 public class facebooklogin extends base_class {
 
-	
-	public static ApachePOI excel;
+
 
 public static void main(String[] args) throws Exception  {
 	startbrowser();
