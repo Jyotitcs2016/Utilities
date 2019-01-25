@@ -63,7 +63,6 @@ driver.navigate().to(config.getProperty("reviewsite"));
 WebElement reviewvisible=driver.findElement(By.xpath(config.getProperty("reviewtexts")));
 
 
-//assert.(reviewvisible.getAttribute("innerHTML").contains("Be safe and don’t include personal info."));
 
 	driver.close();
 	}

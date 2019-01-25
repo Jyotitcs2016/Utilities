@@ -20,9 +20,9 @@ public static void main(String[] args) throws Exception  {
 	driver.get("https://en-gb.facebook.com/login/");
 	
 	driver.findElement(By.cssSelector("input[id='email']")).sendKeys(excel.getstringData("Sheet1",0 ,0));
-	System.out.println(cred[0]);
-	driver.findElement(By.cssSelector("input[id='pass']")).sendKeys(cred[1]);
-	System.out.println(cred[1]);
+	System.out.println(excel.getstringData("Sheet1",0 ,0));
+	driver.findElement(By.cssSelector("input[id='pass']")).sendKeys(excel.getstringData("Sheet1",0 ,1));
+	System.out.println(excel.getstringData("Sheet1",0 ,1));
 	driver.findElement(By.cssSelector("body[dir='ltr']")).click();
 	System.out.println("Hello World!!");
 
