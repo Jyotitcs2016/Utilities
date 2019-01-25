@@ -2,6 +2,12 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.6.0_45"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="library/selenium-server-standalone-2.53.0 (1).jar"/>
+	<classpathentry kind="lib" path="library/poi-3.16.jar"/>
+	<classpathentry kind="lib" path="library/poi-ooxml-3.16.jar"/>
+	<classpathentry kind="lib" path="library/selenium-server-3.5.3.jar"/>
+	<classpathentry kind="lib" path="library/selenium-server-standalone-3.14.0.jar"/>
+	<classpathentry kind="lib" path="library/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="library/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="library/poi-ooxml-schemas-3.17.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

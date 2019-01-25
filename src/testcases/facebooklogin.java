@@ -2,18 +2,24 @@ package testcases;
 
 import javax.xml.bind.ParseConversionEvent;
 
+
 import org.openqa.selenium.By;
 
+import Utilities.ApachePOI;
 import assignments.baseclass.base_class;
 
 public class facebooklogin extends base_class {
 
-public static void main(String[] args) throws Exception {
+	
+	public static ApachePOI excel;
+
+public static void main(String[] args) throws Exception  {
 	startbrowser();
+	excel=new ApachePOI();
 	String[] cred= {config.getProperty("id"),config.getProperty("password")};
 	driver.get("https://en-gb.facebook.com/login/");
 	
-	driver.findElement(By.cssSelector("input[id='email']")).sendKeys(cred[0]);
+	driver.findElement(By.cssSelector("input[id='email']")).sendKeys(excel.getstringData("Sheet1",0 ,0));
 	System.out.println(cred[0]);
 	driver.findElement(By.cssSelector("input[id='pass']")).sendKeys(cred[1]);
 	System.out.println(cred[1]);
