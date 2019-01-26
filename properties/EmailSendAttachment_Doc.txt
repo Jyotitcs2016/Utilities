@@ -1,0 +1,42 @@
+LEARN AUTOMATION _JP 
+This session will cover up how to send any attachment through mail api.
+
+Keep Subscribing my Blog.!!!
+
+Installation:Add to buildpath
+--------------------------------
+commons-email-1.5.jar
+javax.mail-1.6.1.jar
+activation-1.1.1.jar
+
+1.Creating attachment
+-------------------------------
+class:	EmailAttachment 
+
+Properties:setPath(path);
+	setDisposition(EmailAttachment.ATTACHMENT);//Attachment or Inline
+	setDescription("Picture of John");
+	setName("Test Email");
+
+2.Creating Email message
+--------------------------------
+
+Class:	MultiPartEmail 
+	
+Properties:setHostName("smtp.gmail.com");
+	setSmtpPort(465);
+	setSSLOnConnect(true);
+	setAuthenticator(new DefaultAuthenticator("---emailid-------","--password-----"));
+	addTo(emailto,name);
+	email.setFrom(Fromemail, fromname);
+	email.setSubject(mailsubject);
+
+3.Adding attachment to mail
+
+4.send mail
+
+Exception(Google):
+Settings>>Security>>Allow less secure apps to connect
+
+git location:
+https://github.com/Jyotitcs2016/Utilities/blob/master/src/Utilities/testmail.java

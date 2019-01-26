@@ -31,7 +31,7 @@ public static void main(String[] args) throws Exception  {
 	mail.SendMAil("MailPoling/exception.txt", "Test email", "Jyoti", "jyotiprakash569@gmail.com", "Test email", "Mail sent");
 	
 	System.out.println("Mail sent");
-	//driver.close();
+	driver.close();
 
 
 }
