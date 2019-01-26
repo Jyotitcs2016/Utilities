@@ -1,0 +1,28 @@
+Exception in thread "main" org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.gmail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421)
+	at org.apache.commons.mail.Email.send(Email.java:1448)
+	at testmail.main(testmail.java:35)
+Caused by: javax.mail.MessagingException: IOException while sending message;
+  nested exception is:
+	java.io.FileNotFoundException: MailPoling (Access is denied)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1365)
+	at javax.mail.Transport.send0(Transport.java:255)
+	at javax.mail.Transport.send(Transport.java:124)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411)
+	... 2 more
+Caused by: java.io.FileNotFoundException: MailPoling (Access is denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at javax.activation.FileDataSource.getInputStream(FileDataSource.java:97)
+	at javax.activation.DataHandler.writeTo(DataHandler.java:305)
+	at javax.mail.internet.MimeBodyPart.writeTo(MimeBodyPart.java:1692)
+	at javax.mail.internet.MimeBodyPart.writeTo(MimeBodyPart.java:996)
+	at javax.mail.internet.MimeMultipart.writeTo(MimeMultipart.java:561)
+	at com.sun.mail.handlers.multipart_mixed.writeTo(multipart_mixed.java:84)
+	at javax.activation.ObjectDataContentHandler.writeTo(DataHandler.java:889)
+	at javax.activation.DataHandler.writeTo(DataHandler.java:317)
+	at javax.mail.internet.MimeBodyPart.writeTo(MimeBodyPart.java:1692)
+	at javax.mail.internet.MimeMessage.writeTo(MimeMessage.java:1913)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1315)
+	... 5 more

@@ -9,5 +9,9 @@
 	<classpathentry kind="lib" path="library/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="lib" path="library/commons-collections4-4.1.jar"/>
 	<classpathentry kind="lib" path="library/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="library/activation-1.1.1.jar"/>
+	<classpathentry kind="lib" path="library/commons-email-1.4.jar" sourcepath="library/commons-email-1.5.jar"/>
+	<classpathentry kind="lib" path="library/javax.mail-1.6.1.jar"/>
+	<classpathentry kind="lib" path="library/commons-email-1.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
